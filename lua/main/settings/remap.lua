@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- open netrw
+vim.keymap.set("n", "<leader>p", ":Ex<CR>")
+
 -- move one line below to current line
 vim.keymap.set("n", "J", "mzJ`z")
 
