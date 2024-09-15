@@ -5,7 +5,8 @@ return {
 			keymaps = {
 				accept_suggestion = "<C-i>",
 				clear_suggestion = "<C-u>",
-			}
+			},
+			disable_inline_completion = true,
 		})
 	end
 }

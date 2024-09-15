@@ -9,5 +9,15 @@ return {
     },
   config = function()
     require("chatgpt").setup({
+			api_key_cmd = "secret-tool lookup openai neovim",
+			openai_params = {
+				model = "gpt-3.5-turbo",
+				max_tokens = 500
+			},
+			chat = {
+				border_left_sign = '',
+				border_right_sign = '',
+			}
     })
-  end,}
+  end
+}
