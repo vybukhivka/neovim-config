@@ -12,8 +12,8 @@ return {
 							pmenu = {
 								bg = "#1f1e1e",
 								bg_sel = "#393836",
-								bg_thumb = "#1D1C19",
-								bg_sbar = "#282727"
+								bg_thumb = "#282727",
+								bg_sbar = "#1D1C19"
 							},
 							float = {
 								bg = "#1a1919",
