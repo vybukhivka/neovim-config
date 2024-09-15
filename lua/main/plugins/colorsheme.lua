@@ -9,6 +9,7 @@ return {
 						ui = {
 							bg_gutter = "none",
 							bg_p2 = "#1f1c1c",
+							bg_dim = "#1f1e1e",
 							pmenu = {
 								bg = "#1f1e1e",
 								bg_sel = "#393836",
