@@ -20,4 +20,8 @@ vim.opt.splitbelow = true
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 8
+vim.opt.guicursor =
+  "n-v-c:block-blinkon1-blinkoff1-blinkwait1," ..
+  "i-ci-ve:block-blinkon1-blinkoff1-blinkwait1," ..
+  "r-cr-o:hor20-blinkon1-blinkoff1-blinkwait1"
 
