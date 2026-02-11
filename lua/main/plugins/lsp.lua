@@ -71,6 +71,17 @@ return {
 			end,
 		})
 
+		-- Autosave
+		vim.api.nvim_create_augroup("LspFormatting", {})
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			group = "LspFormatting",
+			callback = function()
+				if vim.bo.modified == true then
+					vim.lsp.buf.format({ async = false })
+				end
+			end,
+		})
+
 		-- LSP servers and clients are able to communicate to each other what features they support.
 		--  By default, Neovim doesn't support everything that is in the LSP specification.
 		--  When you add nvim-cmp, luasnip, etc. Neovim now has *more* capabilities.
