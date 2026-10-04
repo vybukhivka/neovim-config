@@ -76,6 +76,9 @@ vim.pack.add({
 
 	-- Git
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
+
+	-- Colorscheme
+	{ src = "https://github.com/ficd0/ashen.nvim" },
 })
 
 require("plugins.blink")
@@ -89,3 +92,5 @@ require("fidget").setup({})
 require("nvim-autopairs").setup({
 	check_ts = true,
 })
+
+vim.cmd.colorscheme("ashen")
