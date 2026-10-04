@@ -47,6 +47,7 @@ vim.api.nvim_create_autocmd("PackChanged", {
 
 vim.pack.add({
 	-- Snippets & Completion
+	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip", version = vim.version.range("2.*") },
 	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
 	{ src = "https://github.com/saghen/blink.lib" },
@@ -76,10 +77,13 @@ vim.pack.add({
 
 	-- Git
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/kdheepak/lazygit.nvim" },
+	{ src = "https://github.com/kdheepak/lazygit.nvim" },
 
 	-- Colorscheme
 	{ src = "https://github.com/ficd0/ashen.nvim" },
+
+	-- OpenCode
+	{ src = "https://github.com/nickjvandyke/opencode.nvim" },
 })
 
 require("plugins.blink")
@@ -89,6 +93,7 @@ require("plugins.mini")
 require("plugins.telescope")
 require("plugins.conform")
 require("plugins.git")
+require("plugins.opencode")
 require("fidget").setup({})
 require("nvim-autopairs").setup({
 	check_ts = true,

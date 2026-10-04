@@ -1,4 +1,7 @@
-require("luasnip").setup({})
+require("luasnip").setup({
+    exit_roots = false,
+    keep_roots = true
+})
 require("luasnip.loaders.from_vscode").lazy_load()
 
 require("blink.cmp").setup({
@@ -8,6 +11,8 @@ require("blink.cmp").setup({
 		-- Scroll the documentation window popup
 		["<C-f>"] = { "scroll_documentation_up" },
 		["<C-b>"] = { "scroll_documentation_down" },
+		["<C-l>"] = { "snippet_forward" },
+		["<C-h>"] = { "snippet_backward" },
 	},
 
 	appearance = {
@@ -24,7 +29,7 @@ require("blink.cmp").setup({
 
 	snippets = { preset = "luasnip" },
 
-	fuzzy = { implementation = "lua" },
+	fuzzy = { implementation = "prefer_rust" },
 
 	signature = {
 		enabled = true,
