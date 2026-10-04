@@ -1,24 +1,32 @@
-require('luasnip').setup {}
-require('luasnip.loaders.from_vscode').lazy_load()
+require("luasnip").setup({})
+require("luasnip.loaders.from_vscode").lazy_load()
 
-require('blink.cmp').setup {
-  keymap = { preset = 'default' },
+require("blink.cmp").setup({
+	keymap = { 
+        preset = "default",
 
-  appearance = {
-    nerd_font_variant = 'mono',
-  },
+        -- Scroll the documentation window popup
+        ["<C-f>"] = { "scroll_documentation_up" },
+        ["<C-b>"] = { "scroll_documentation_down" },
+    },
 
-  completion = {
-    documentation = { auto_show = true, auto_show_delay_ms = 100 },
-  },
+	appearance = {
+		nerd_font_variant = "mono",
+	},
 
-  sources = {
-    default = { 'lsp', 'path', 'snippets' },
-  },
+	completion = {
+		documentation = { auto_show = true, auto_show_delay_ms = 0 },
+	},
 
-  snippets = { preset = 'luasnip' },
+	sources = {
+		default = { "lsp", "path", "snippets" },
+	},
 
-  fuzzy = { implementation = 'lua' },
+	snippets = { preset = "luasnip" },
 
-  signature = { enabled = true },
-}
+	fuzzy = { implementation = "lua" },
+
+	signature = {
+		enabled = true,
+	},
+})
