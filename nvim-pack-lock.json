@@ -5,6 +5,10 @@
       "src": "https://github.com/L3MON4D3/LuaSnip",
       "version": "2.0.0 - 3.0.0"
     },
+    "ashen": {
+      "rev": "2da901f3ce7f233c7a2437cb2b824afd2a01f2aa",
+      "src": "https://github.com/ficd0/ashen"
+    },
     "ashen.nvim": {
       "rev": "bfb04bd50b69d863469b2deb9fb361cf0d945ba7",
       "src": "https://github.com/ficd0/ashen.nvim"
