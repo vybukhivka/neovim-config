@@ -76,6 +76,7 @@ vim.pack.add({
 
 	-- Git
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
+    { src = "https://github.com/kdheepak/lazygit.nvim" },
 
 	-- Colorscheme
 	{ src = "https://github.com/ficd0/ashen.nvim" },

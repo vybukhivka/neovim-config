@@ -2,13 +2,13 @@ require("luasnip").setup({})
 require("luasnip.loaders.from_vscode").lazy_load()
 
 require("blink.cmp").setup({
-	keymap = { 
-        preset = "default",
+	keymap = {
+		preset = "default",
 
-        -- Scroll the documentation window popup
-        ["<C-f>"] = { "scroll_documentation_up" },
-        ["<C-b>"] = { "scroll_documentation_down" },
-    },
+		-- Scroll the documentation window popup
+		["<C-f>"] = { "scroll_documentation_up" },
+		["<C-b>"] = { "scroll_documentation_down" },
+	},
 
 	appearance = {
 		nerd_font_variant = "mono",

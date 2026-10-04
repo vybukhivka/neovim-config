@@ -31,7 +31,7 @@ vim.opt.hlsearch = false
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'jk', '<Esc>')
 
--- Diagnostic keymaps
+-- diagnostic keymaps
 vim.keymap.set('n', '[d', function() vim.diagnostic.jump({ count = -1, float = true }) end, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', function() vim.diagnostic.jump({ count = 1, float = true }) end, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
@@ -39,7 +39,5 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- chat-gpt
-vim.keymap.set('n', '<leader>c', ':ChatGPT<CR>', { desc = 'Exit terminal mode' })
-vim.keymap.set('v', '<leader>e', ':ChatGPTRun explain_code<CR>', { desc = 'Exit terminal mode' })
-
+-- lazygit
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>")
